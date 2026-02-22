@@ -19,7 +19,8 @@ document.getElementById('submitBtn').addEventListener('click', async function() 
             headers: {
                 'Content-Type': 'application/json',
                 'x-api-key': API_KEY,
-                'anthropic-version': '2023-06-01'
+                'anthropic-version': '2023-06-01',
+                'anthropic-dangerous-direct-browser-access': 'true'
             },
             body: JSON.stringify({
                 model: 'claude-3-5-sonnet-20241022',
@@ -53,4 +54,5 @@ document.getElementById('submitBtn').addEventListener('click', async function() 
         resultsDiv.innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
     }
 });
+
 
