@@ -1,6 +1,6 @@
-const API_KEY = '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';
+const API_KEY = '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';
 
-document.getElementById('submitBtn').addEventListener('click', function() {
+document.getElementById('submitBtn').addEventListener('click', async function() {
     const userInput = document.getElementById('userInput').value;
     
     if (!userInput.trim()) {
