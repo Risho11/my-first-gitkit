@@ -1,27 +1,424 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Risho AI Consulting - Streamline Your Business</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plasma AI – AI Strategy & Workflow Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <header>
-    <h1>Risho AI Consulting</h1>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/demo">Live AI Demo</a>
-      <a href="/services">Services</a>
-      <a href="/contact">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <h2>AI for Small Businesses</h2>
-      <p>Automate responses, streamline processes—your compsci lab skills at work.</p>
-      <a href="/demo" class="cta">Try AI Demo</a>
-    </section>
-  </main>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="logo">Plasma<span>AI</span></a>
+      <ul class="nav-links">
+        <li><a href="services/services.html">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="about/about.html">About</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="demo/index.html" class="btn btn-ghost">Live Demo</a>
+        <a href="#contact" class="btn btn-primary">Book a Call
+          <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+    <div class="container hero-grid">
+
+      <!-- Left: Copy -->
+      <div class="hero-left">
+        <div class="pill">
+          <span class="pill-dot"></span>
+          AI Strategy & Workflow Consulting
+        </div>
+        <h1>
+          Make AI work for your team,
+          <span class="hero-highlight">not the other way around.</span>
+        </h1>
+        <p class="hero-sub">
+          Plasma AI helps growing teams map their workflows, identify where AI actually fits,
+          and design communication and automation systems that save hours every week — without
+          forcing you to become a software company.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary btn-lg">Book a 30‑Min Discovery Call
+            <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#services" class="btn btn-ghost btn-lg">View Services</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="stat-num">12<span>+ hrs</span></div>
+            <div class="stat-label">saved per week after first engagement</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="hero-stat">
+            <div class="stat-num">3<span>×</span></div>
+            <div class="stat-label">typical ROI within six months</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="hero-stat">
+            <div class="stat-num">0</div>
+            <div class="stat-label">lines of code you need to write</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Visual card -->
+      <div class="hero-right">
+        <div class="float-badge float-badge--1">
+          <span>🔍</span>
+          <div>
+            <div class="badge-title">Audit Complete</div>
+            <div class="badge-sub">3 quick wins identified</div>
+          </div>
+        </div>
+        <div class="float-badge float-badge--2">
+          <span>⚡</span>
+          <div>
+            <div class="badge-title">12 hrs/week saved</div>
+            <div class="badge-sub">after week 3</div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-shine"></div>
+          <div class="card-top-bar">
+            <div class="card-top-label">Workflow Readiness Report</div>
+            <div class="status-live">
+              <span class="status-dot"></span>Analyzing
+            </div>
+          </div>
+          <div class="audit-rows">
+            <div class="audit-row">
+              <div class="audit-icon">
+                <svg viewBox="0 0 20 20" fill="none"><path d="M4 15l4-4 3 3 5-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <div class="audit-info">
+                <div class="audit-name">Repetitive Task Mapping</div>
+                <div class="audit-sub">Email, reports, data entry</div>
+              </div>
+              <div class="audit-badge audit-badge--high">High Potential</div>
+            </div>
+            <div class="audit-row">
+              <div class="audit-icon">
+                <svg viewBox="0 0 20 20" fill="none"><rect x="3" y="4" width="14" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 9h6M7 12h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <div class="audit-info">
+                <div class="audit-name">Documentation System</div>
+                <div class="audit-sub">Knowledge capture & reuse</div>
+              </div>
+              <div class="audit-badge audit-badge--med">Medium</div>
+            </div>
+            <div class="audit-row">
+              <div class="audit-icon">
+                <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M10 7v3l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <div class="audit-info">
+                <div class="audit-name">Client Communication</div>
+                <div class="audit-sub">Templates & AI drafting</div>
+              </div>
+              <div class="audit-badge audit-badge--win">Quick Win</div>
+            </div>
+          </div>
+          <div class="card-footer-bar">
+            <div class="footer-bar-text">Estimated time saved annually</div>
+            <div class="footer-bar-num">624 hrs</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="hero-tags">
+      <span>Process & workflow mapping</span>
+      <span>Tool selection & AI advisory</span>
+      <span>Communication systems</span>
+      <span>Documentation design</span>
+    </div>
+  </section>
+
+  <!-- Who section -->
+  <section class="section section-who" id="who">
+    <div class="container">
+      <div class="section-label">Who Plasma AI Works With</div>
+      <div class="who-grid">
+        <div class="who-card">
+          <div class="who-icon">⚙️</div>
+          <h3>Small teams buried in manual work</h3>
+          <p>You're copy‑pasting between tools, rewriting the same messages, and chasing updates across email, chat, and spreadsheets. You know AI could help, but you don't have time to experiment with every new product.</p>
+        </div>
+        <div class="who-card">
+          <div class="who-icon">🎯</div>
+          <h3>Leaders who want clarity, not more apps</h3>
+          <p>You don't need another shiny dashboard. You need a clear picture of your processes, where AI can safely plug in, which tools fit your constraints, and how to roll them out so your team actually uses them.</p>
+        </div>
+      </div>
+      <div class="industries-strip">
+        <span class="industries-label">Recent work includes</span>
+        <span class="industry-tag">Professional services</span>
+        <span class="industry-tag">Small agencies</span>
+        <span class="industry-tag">Real estate & ops</span>
+        <span class="industry-tag">Education & training</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-label">Consulting Services</div>
+          <h2>Everything your team needs to <span class="text-accent">use AI well</span></h2>
+        </div>
+        <p class="section-header-desc">Strategy, systems design, and light implementation — without needing to hire engineers or become a software company.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-num">01</div>
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>AI Readiness & Workflow Audit</h3>
+          <p>Map how work actually gets done today: who does what, where information gets stuck, and which tasks are truly repetitive. You receive a clear picture of where AI can safely and meaningfully help.</p>
+          <ul class="service-list">
+            <li>Process mapping sessions with key team members</li>
+            <li>Inventory of repetitive and decision-heavy tasks</li>
+            <li>Prioritized AI opportunities and "do not automate" zones</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>AI Strategy & Roadmap</h3>
+          <p>Turn that audit into a practical plan: which use cases to start with, what tools fit your stack and budget, and how to phase changes so the team isn't overwhelmed.</p>
+          <ul class="service-list">
+            <li>1–3 quick‑win projects scoped with timelines</li>
+            <li>Medium‑term initiatives for deeper impact</li>
+            <li>Risk, data, and change‑management considerations</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Workflow & Communication Design</h3>
+          <p>Design future‑state workflows that blend humans and AI: when to use tools like Claude or ChatGPT, how information should move, and what "good" looks like for your team.</p>
+          <ul class="service-list">
+            <li>Redesigned workflows and communication flows</li>
+            <li>Shared prompt libraries and templates</li>
+            <li>Roles and responsibilities for humans vs AI assistants</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-num">04</div>
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Tool Selection & Light Implementation</h3>
+          <p>Help choosing and configuring the right tools — no heavy custom coding. You keep ownership; technical partners or in-house IT can implement deeper changes as needed.</p>
+          <ul class="service-list">
+            <li>Shortlisted tools matched to your use cases</li>
+            <li>Implementation checklist and success criteria</li>
+            <li>Team training and onboarding material</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-num">05</div>
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Knowledge & Documentation Systems</h3>
+          <p>Build internal systems where information is easy to find, summarize, and reuse with AI: better notes, playbooks, and documented processes your team will actually maintain.</p>
+          <ul class="service-list">
+            <li>Structure for internal knowledge bases</li>
+            <li>Standards for documentation and updates</li>
+            <li>Guidelines for safe AI use on internal content</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-num">06</div>
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Ongoing Advisory</h3>
+          <p>As tools and your business evolve, Plasma AI acts as a sounding board: sense‑checking ideas, refining prompts, and continuously improving workflows over time.</p>
+          <ul class="service-list">
+            <li>Monthly or quarterly review sessions</li>
+            <li>Feedback from your team translated into improvements</li>
+            <li>Updates as AI capabilities and best practices shift</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section section-process" id="process">
+    <div class="container">
+      <div class="process-header">
+        <div class="section-label">How an Engagement Works</div>
+        <h2>From first call to <span class="text-accent">real results</span> in weeks</h2>
+      </div>
+      <div class="process-track">
+        <div class="process-line"></div>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-bubble">1</div>
+            <h3>Discovery</h3>
+            <p>A short call to understand your business model, team structure, existing tools, and where you suspect the friction is.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-bubble">2</div>
+            <h3>Workflow Mapping</h3>
+            <p>Deep‑dive sessions to map how work and information move today, where handoffs fail, and where people repeat the same tasks.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-bubble">3</div>
+            <h3>AI Roadmap</h3>
+            <p>Concrete recommendations: what to automate with AI, which tools to use, and how to phase changes so adoption actually sticks.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-bubble">4</div>
+            <h3>Support & Iteration</h3>
+            <p>Optional support as your team starts using new workflows: refining prompts, adjusting processes, and measuring results.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founder -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">About the Founder</div>
+      <div class="founder-card">
+        <div class="founder-img-wrap">
+          <img src="https://via.placeholder.com/340x340?text=Your+Photo" alt="Rishana Senthan">
+          <div class="founder-img-note">Replace with your own photo</div>
+        </div>
+        <div class="founder-bio">
+          <h2>Rishana Senthan</h2>
+          <div class="founder-role">Founder, Plasma AI</div>
+          <p>Engineering Science student at the University of Toronto with a strong focus on systems, structures, and how complex processes can be simplified. A key strength is taking scattered workflows and turning them into clear, repeatable systems.</p>
+          <p>Plasma AI combines that engineering mindset with modern AI tools to help teams reduce friction, communicate more clearly, and free up time for deep work rather than repetitive busywork.</p>
+          <div class="founder-actions">
+            <a href="#contact" class="btn btn-primary">Talk about your workflows
+              <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="demo/index.html" class="btn btn-ghost">See a live AI demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-faq" id="faq">
+    <div class="container">
+      <div class="section-label">Questions You Might Have</div>
+      <h2 class="faq-title">Common <span class="text-accent">questions</span></h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Do you build custom software?</h3>
+          <p>Plasma AI focuses on strategy, process design, and light implementation guidance. For heavy engineering or full custom platforms, we help you define requirements and can hand off to your developers or trusted partners.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Which tools do you work with?</h3>
+          <p>Tool‑agnostic by design. Depending on your needs, you might use Claude, ChatGPT, Notion AI, Zapier, Make, CRM automations, or other platforms that fit your stack and data requirements.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How long does an engagement take?</h3>
+          <p>A focused audit and roadmap typically takes 2–4 weeks from discovery to final recommendations, with optional ongoing advisory afterwards.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do I need a technical team?</h3>
+          <p>No. Plasma AI is specifically designed for teams without dedicated developers. We recommend tools and workflows your team can operate and maintain themselves, with clear handoff documentation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA -->
+  <section class="section section-cta" id="contact">
+    <div class="cta-orb cta-orb--1"></div>
+    <div class="cta-orb cta-orb--2"></div>
+    <div class="container">
+      <div class="cta-inner">
+        <div class="pill pill-light">
+          <span class="pill-dot"></span>
+          Start with a free conversation
+        </div>
+        <h2>Find out what AI can actually do for your team</h2>
+        <p>Book a free 30‑minute discovery call. We'll tell you exactly where the opportunities are — no obligation, no sales pressure.</p>
+        <div class="cta-buttons">
+          <a href="mailto:contact@plasmaai.com" class="btn btn-primary btn-lg">Book a Discovery Call
+            <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#services" class="btn btn-outline btn-lg">View Services</a>
+        </div>
+        <div class="cta-meta">
+          <span>
+            <svg viewBox="0 0 14 14" fill="none"><path d="M7 1l1.5 3.5L12 5l-2.5 2.5.5 3.5L7 9.5 4 11l.5-3.5L2 5l3.5-.5L7 1z" stroke="currentColor" stroke-width="1.2"/></svg>
+            No commitment required
+          </span>
+          <span>·</span>
+          <span>Response within 24 hours</span>
+          <span>·</span>
+          <span>Based in Toronto</span>
+        </div>
+        <div class="contact-email">
+          <a href="mailto:contact@plasmaai.com">contact@plasmaai.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="logo">Plasma<span>AI</span></a>
+        <p>Practical AI consulting for growing teams — no code required.</p>
+      </div>
+      <div class="footer-links-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Workflow Audit</a></li>
+          <li><a href="#services">AI Strategy</a></li>
+          <li><a href="#services">Communication Design</a></li>
+          <li><a href="#services">Tool Selection</a></li>
+          <li><a href="#services">Ongoing Advisory</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="demo/index.html">Live Demo</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Plasma AI. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
