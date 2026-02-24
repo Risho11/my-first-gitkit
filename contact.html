@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Plasma AI</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Plasma AI</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services/services.html">Services</a></li>
+        <li><a href="pricing/pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="contact-hero reveal">
+        <h1>Start with a conversation</h1>
+        <p>
+          30 minutes to understand your workflows and whether Plasma AI can help.
+          No sales pressure, just clarity.
+        </p>
+        <div class="contact-primary">
+          <a href="mailto:contact@plasmaai.com" class="cta-button cta-lg">Email Us</a>
+          <p>contact@plasmaai.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section class="section">
+    <div class="container">
+      <form id="contactForm" class="contact-form reveal">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+        </div>
+        <div class="form-row">
+          <input type="text" name="company" placeholder="Company (optional)">
+          <select name="service">
+            <option>Interested in...</option>
+            <option>Workflow Audit</option>
+            <option>Full Strategy</option>
+            <option>Ongoing Advisory</option>
+          </select>
+        </div>
+        <textarea name="message" placeholder="Tell us about your workflows or challenges..." rows="6" required></textarea>
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
