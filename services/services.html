@@ -7,21 +7,55 @@
   <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-  <!-- Navbar (same as index.html) -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="../index.html" class="logo">Plasma AI</a>
+<nav class="navbar">
+  <div class="container">
+    <div class="nav-inner">
+
+      <!-- Logo -->
+      <a href="../index.html" class="nav-logo">
+        <div class="logo-mark">
+          <!-- Hexagon icon -->
+          <svg viewBox="0 0 18 18" fill="none">
+            <path d="M9 2L15.5 5.5V12.5L9 16L2.5 12.5V5.5L9 2Z"
+                  stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+            <circle cx="9" cy="9" r="2" fill="white"/>
+          </svg>
+        </div>
+        Plasma AI
+      </a>
+
+      <!-- Desktop nav links -->
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="#" class="active">Services</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="services/services.html">Services</a></li>
+        <li><a href="../pricing/pricing.html">Pricing</a></li>
         <li><a href="../about.html">About</a></li>
+        <li><a href="faq/faq.html">FAQ</a></li>
         <li><a href="../contact.html">Contact</a></li>
+        <!-- Demo link styled differently — see .nav-demo in CSS -->
+        <li><a href="../demo/index.html" class="nav-demo">Demo</a></li>
       </ul>
-    </div>
-  </nav>
 
+      <!-- CTA buttons -->
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn--ghost">Book a Call</a>
+        <a href="contact.html" class="btn btn--primary">
+          Free Audit
+          <svg viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Mobile hamburger button (visible only on small screens via CSS) -->
+      <button id="navToggle" aria-label="Open menu">☰</button>
+
+    </div>
+  </div>
+</nav>
   <!-- Hero -->
+<section class="section">
   <section class="hero hero--services">
     <div class="container">
       <div class="hero-content reveal">
@@ -36,7 +70,7 @@
       </div>
     </div>
   </section>
-
+</section>
   <!-- Service Categories (tabbed panels) -->
   <section class="section" id="services">
     <div class="container">

@@ -4,11 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Consulting Demo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+<nav class="navbar">
+  <div class="container">
+    <div class="nav-inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo">
+        <div class="logo-mark">
+          <!-- Hexagon icon -->
+          <svg viewBox="0 0 18 18" fill="none">
+            <path d="M9 2L15.5 5.5V12.5L9 16L2.5 12.5V5.5L9 2Z"
+                  stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+            <circle cx="9" cy="9" r="2" fill="white"/>
+          </svg>
+        </div>
+        Plasma AI
+      </a>
+
+      <!-- Desktop nav links -->
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="services/services.html">Services</a></li>
+        <li><a href="../pricing/pricing.html">Pricing</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="faq/faq.html">FAQ</a></li>
+        <li><a href="../contact/contact/contact.html">Contact</a></li>
+        <!-- Demo link styled differently — see .nav-demo in CSS -->
+        <li><a href="../demo/index.html" class="nav-demo">Demo</a></li>
+      </ul>
+
+      <!-- CTA buttons -->
+      <div class="nav-cta">
+        <a href="contact/contact.html" class="btn btn--ghost">Book a Call</a>
+        <a href="contact/contact.html" class="btn btn--primary">
+          Free Audit
+          <svg viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Mobile hamburger button (visible only on small screens via CSS) -->
+      <button id="navToggle" aria-label="Open menu">☰</button>
+
+    </div>
+  </div>
+</nav>
+<section class="section">
     <div class="container">
-        <h1>Business AI Demo</h1>
+        <h2 style="font-size:clamp(26px,3.2vw,44px);letter-spacing:-0.03em;">
+        Business<br>
+        <span class="grad-text">AI Demo</span>
+        </h2>
         <p>Compare responses from multiple AI models</p>
         
         <div class="input-section">
@@ -20,7 +71,7 @@
             <div id="results"></div>
         </div>
     </div>
-    
+</section>
     <script src="script.js"></script>
 </body>
 </html>
