@@ -7,14 +7,13 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+<!-- Navbar -->
 <nav class="navbar">
   <div class="container">
     <div class="nav-inner">
-
-      <!-- Logo -->
       <a href="index.html" class="nav-logo">
         <div class="logo-mark">
-          <!-- Hexagon icon -->
           <svg viewBox="0 0 18 18" fill="none">
             <path d="M9 2L15.5 5.5V12.5L9 16L2.5 12.5V5.5L9 2Z"
                   stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
@@ -23,20 +22,15 @@
         </div>
         Plasma AI
       </a>
-
-      <!-- Desktop nav links -->
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services/services.html">Services</a></li>
         <li><a href="pricing/pricing.html">Pricing</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="#" class="active">About</a></li>
         <li><a href="faq/faq.html">FAQ</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <!-- Demo link styled differently — see .nav-demo in CSS -->
         <li><a href="demo/index.html" class="nav-demo">Demo</a></li>
       </ul>
-
-      <!-- CTA buttons -->
       <div class="nav-cta">
         <a href="contact.html" class="btn btn--ghost">Book a Call</a>
         <a href="contact.html" class="btn btn--primary">
@@ -47,25 +41,29 @@
           </svg>
         </a>
       </div>
-
-      <!-- Mobile hamburger button (visible only on small screens via CSS) -->
       <button id="navToggle" aria-label="Open menu">☰</button>
-
     </div>
   </div>
 </nav>
 
-  <!-- Founder Bio (expanded from index.html) -->
+<!-- Founder Card (pic left, text right) -->
 <section class="section">
-  <section class="hero hero--about">
-    <div class="personal-block reveal">
-      <div class="founder-hero reveal">
+  <div class="container">
+    <div class="card reveal" style="max-width: 900px; margin: 0 auto 4rem;">
+      <div style="display: grid; grid-template-columns: 280px 1fr; gap: 2.5rem; align-items: start;">
+        <!-- Photo left -->
+        <div style="text-align: center;">
+          <img src="images/founder.jpg" alt="Rishana Senthan" 
+               style="width: 280px; height: 280px; object-fit: cover; border-radius: 20px; box-shadow: 0 10px 30px rgba(109, 40, 217, 0.15);">
+        </div>
         
-        <img src="images/founder.jpg" alt="Rishana Senthan" style="width: 280px; height: 280px; object-fit: cover; border-radius: 20px;">
-        <div class="founder-hero-content">
-          <h1>Rishana Senthan</h1>
-          <p class="founder-subtitle">Founder & Principal Consultant</p>
-          <p>
+        <!-- Text right -->
+        <div>
+          <h1 style="margin-bottom: 0.75rem;">Rishana Senthan</h1>
+          <p style="font-size: 18px; color: var(--text-soft); margin-bottom: 1.5rem; font-weight: 500;">
+            Founder & Principal Consultant
+          </p>
+          <p style="color: var(--text-muted); line-height: 1.75;">
             Engineering Science student at University of Toronto. Systems thinker who turns
             messy workflows into clear, repeatable processes. Plasma AI exists because most
             teams waste hours on work that AI could handle—but they do not know where to start.
@@ -73,25 +71,39 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </section>
-  <!-- Approach / Philosophy -->
-  <section class="section">
-    <div class="container">
-      <h2 class="reveal">Why Plasma AI?</h2>
-      <div class="two-column reveal">
-        <div class="column">
-          <h3>Engineering Approach</h3>
-          <p>Workflows are systems. We analyze them like structures: identify load‑bearing elements, weak points, and optimization opportunities.</p>
-        </div>
-        <div class="column">
-          <h3>No Hype, Just Results</h3>
-          <p>We only recommend what works for your constraints. No experimental tools, no unproven frameworks.</p>
-        </div>
+
+<!-- Why Plasma AI -->
+<section class="section">
+  <div class="container">
+    <h2 class="reveal">Why Plasma AI?</h2>
+    <div class="grid-2 reveal">
+      <div>
+        <h3>Engineering Approach</h3>
+        <p>Workflows are systems. We analyze them like structures: identify load‑bearing elements, weak points, and optimization opportunities.</p>
+      </div>
+      <div>
+        <h3>No Hype, Just Results</h3>
+        <p>We only recommend what works for your constraints. No experimental tools, no unproven frameworks.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <script src="js/main.js"></script>
+<!-- CTA -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="cta-block reveal">
+      <h2>Ready to start?</h2>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn--primary btn--lg">Schedule a Call</a>
+        <a href="services/services.html" class="btn btn--outline btn--lg">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="js/main.js"></script>
 </body>
 </html>
