@@ -1,180 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services — Kinesis AI</title>
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main.css" />
 </head>
 <body>
+
+<!-- ═══════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════ -->
 <nav class="navbar">
   <div class="container">
     <div class="nav-inner">
-
-      <!-- Logo -->
       <a href="../index.html" class="nav-logo">
         <div class="logo-mark">
-          <!-- Hexagon icon -->
-          <svg viewBox="0 0 18 18" fill="none">
-            <path d="M9 2L15.5 5.5V12.5L9 16L2.5 12.5V5.5L9 2Z"
-                  stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-            <circle cx="9" cy="9" r="2" fill="white"/>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
           </svg>
         </div>
         Kinesis AI
       </a>
-
-      <!-- Desktop nav links -->
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="services/services.html">Services</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
         <li><a href="../pricing/pricing.html">Pricing</a></li>
         <li><a href="../about.html">About</a></li>
-        <li><a href="faq/faq.html">FAQ</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-        <!-- Demo link styled differently — see .nav-demo in CSS -->
+        <li><a href="../faq/faq.html">FAQ</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
         <li><a href="../demo/index.html" class="nav-demo">Demo</a></li>
       </ul>
-
-      <!-- CTA buttons -->
       <div class="nav-cta">
-        <a href="contact.html" class="btn btn--ghost">Book a Call</a>
-        <a href="contact.html" class="btn btn--primary">
-          Free Audit
-          <svg viewBox="0 0 16 16" fill="none">
-            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor"
-                  stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </a>
+        <a href="../contact/contact.html" class="btn btn--ghost">Book a Call</a>
+        <a href="../contact/contact.html" class="btn btn--primary">Free Audit</a>
       </div>
-
-      <!-- Mobile hamburger button (visible only on small screens via CSS) -->
-      <button id="navToggle" aria-label="Open menu">☰</button>
-
+      <button id="navToggle" aria-label="Toggle menu">☰</button>
     </div>
   </div>
 </nav>
-  <!-- Hero -->
-<section class="section">
-  <section class="hero hero--services">
-    <div class="container">
-      <div class="hero-content reveal">
-        <div class="hero-tag">
-          <span class="tag">Consulting Services</span>
-        </div>
-        <h1>AI Strategy & Workflow Services</h1>
-        <p>
-          Tailored consulting packages to map your processes, identify AI opportunities,
-          and design workflows that save time without requiring you to become a tech company.
-        </p>
-      </div>
-    </div>
-  </section>
+
+<!-- ═══════════════════════════════════════════
+     PAGE HERO
+═══════════════════════════════════════════ -->
+<section class="page-hero">
+  <div class="orb orb--purple" style="width:500px;height:500px;top:-180px;left:-100px;"></div>
+  <div class="orb orb--blue" style="width:380px;height:380px;bottom:-120px;right:-80px;"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <span class="tag reveal">What We Offer</span>
+    <h1 class="page-hero-title reveal reveal-delay-1">
+      End-to-end AI services<br><span class="grad-text">built for SMBs</span>
+    </h1>
+    <p class="page-hero-sub reveal reveal-delay-2">
+      Six focused service lines. Each delivered personally by our founders — no handoffs, no shortcuts.
+    </p>
+  </div>
 </section>
-  <!-- Service Categories (tabbed panels) -->
-  <section class="section" id="services">
-    <div class="container">
-      <!-- Tabs -->
-      <div class="tab-nav reveal">
-        <button class="tab-btn active" data-tab="audit">AI Readiness Audit</button>
-        <button class="tab-btn" data-tab="strategy">Strategy & Roadmap</button>
-        <button class="tab-btn" data-tab="implementation">Implementation</button>
-        <button class="tab-btn" data-tab="advisory">Ongoing Advisory</button>
+
+<!-- ═══════════════════════════════════════════
+     TAB BAR
+═══════════════════════════════════════════ -->
+<section class="section--sm" style="background:var(--bg);">
+  <div class="container">
+    <div class="tab-bar reveal">
+      <button class="tab-btn active" data-tab="services">Our Services</button>
+      <button class="tab-btn" data-tab="process">How We Work</button>
+    </div>
+
+    <!-- ── SERVICES TAB ── -->
+    <div class="tab-panel active" data-tab="services">
+      <div class="services-outer reveal">
+        <div class="services-grid">
+
+          <!-- 01 -->
+          <div class="svc-card" id="audit">
+            <div class="svc-num">01</div>
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+              </svg>
+            </div>
+            <div class="svc-name">AI Readiness Audit</div>
+            <p class="svc-desc">A scored, comprehensive analysis of your current workflows, tools, and data infrastructure. We identify exactly where AI can save money, cut time, and create leverage — delivered in 5 business days with a detailed written report.</p>
+            <div class="svc-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <!-- 02 -->
+          <div class="svc-card" id="strategy">
+            <div class="svc-num">02</div>
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 20h20M5 20V10l7-7 7 7v10"/>
+              </svg>
+            </div>
+            <div class="svc-name">AI Strategy & Roadmap</div>
+            <p class="svc-desc">A prioritised, phased plan — from quick wins you can implement this week to long-term transformation projects. Every recommendation is sized to your actual budget and team capacity, not a generic playbook.</p>
+            <div class="svc-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <!-- 03 -->
+          <div class="svc-card" id="automation">
+            <div class="svc-num">03</div>
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 15h6M9 12h4"/>
+              </svg>
+            </div>
+            <div class="svc-name">Workflow Automation</div>
+            <p class="svc-desc">We design and deploy automated pipelines that eliminate repetitive manual tasks — data entry, reporting, scheduling, notifications, and more. Built on tools your team already uses with zero disruption to existing ops.</p>
+            <div class="svc-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="svc-card" id="support">
+            <div class="svc-num">04</div>
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <div class="svc-name">AI Customer Support</div>
+            <p class="svc-desc">Custom-trained AI chat agents that resolve common queries 24/7, escalate intelligently to your team, and learn from every interaction. Deployed on your website, CRM, or helpdesk in days — not months.</p>
+            <div class="svc-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="svc-card" id="marketing">
+            <div class="svc-num">05</div>
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+            </div>
+            <div class="svc-name">Content & Marketing AI</div>
+            <p class="svc-desc">AI-powered content systems that produce on-brand copy, social posts, email sequences, and ad variants at scale. We configure and train the models on your voice so output requires minimal editing before it goes live.</p>
+            <div class="svc-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="svc-card" id="data">
+            <div class="svc-num">06</div>
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+              </svg>
+            </div>
+            <div class="svc-name">Data & Analytics AI</div>
+            <p class="svc-desc">Turn your raw business data into actionable intelligence. We build automated dashboards, predictive models, and anomaly alerts that surface the insights you need — without you digging through spreadsheets every morning.</p>
+            <div class="svc-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+
+        </div><!-- /services-grid -->
+      </div><!-- /services-outer -->
+
+      <!-- Stats row -->
+      <div class="grid-4 reveal" style="margin-top:64px;text-align:center;">
+        <div class="stat-block">
+          <div class="num" data-count="200" data-suffix="+">0+</div>
+          <div class="lbl">Businesses Audited</div>
+        </div>
+        <div class="stat-block">
+          <div class="num" data-count="94" data-suffix="%">0%</div>
+          <div class="lbl">Client Satisfaction</div>
+        </div>
+        <div class="stat-block">
+          <div class="num" data-count="12" data-suffix="hrs">0hrs</div>
+          <div class="lbl">Saved Per Week (avg)</div>
+        </div>
+        <div class="stat-block">
+          <div class="num" data-count="3" data-suffix="x">0x</div>
+          <div class="lbl">Average 6-Month ROI</div>
+        </div>
       </div>
 
-      <!-- Tab Panels -->
-      <div class="tab-panels">
-        <!-- Audit Panel -->
-        <div class="tab-panel active" data-tab="audit">
-          <div class="services-grid reveal">
-            <div class="card">
-              <div class="card-icon">01</div>
-              <h3>Workflow Audit</h3>
-              <p>Map how work flows through your team today. Identify repetitive tasks, decision bottlenecks, and communication gaps.</p>
-            </div>
-            <div class="card">
-              <div class="card-icon">02</div>
-              <h3>AI Opportunity Scoring</h3>
-              <p>Score every process against AI readiness: effort required, risk level, time saved, and implementation complexity.</p>
-            </div>
-            <div class="card">
-              <div class="card-icon">03</div>
-              <h3>Quick-Win Identification</h3>
-              <p>Pinpoint 2–3 immediate opportunities that deliver ROI within 30 days using existing tools.</p>
-            </div>
-          </div>
-        </div>
+    </div><!-- /services tab panel -->
 
-        <!-- Strategy Panel -->
-        <div class="tab-panel" data-tab="strategy">
-          <div class="services-grid reveal">
-            <div class="card">
-              <h3>Phased Roadmap</h3>
-              <p>Prioritized plan: quick wins first, then medium-term projects, then strategic transformation.</p>
-            </div>
-            <div class="card">
-              <h3>Tool Recommendations</h3>
-              <p>Curated shortlist of tools that fit your stack, budget, and technical constraints.</p>
-            </div>
-            <div class="card">
-              <h3>Change Management Plan</h3>
-              <p>How to roll out changes so your team adopts them without resistance or confusion.</p>
-            </div>
-          </div>
-        </div>
+    <!-- ── PROCESS TAB ── -->
+    <div class="tab-panel" data-tab="process">
 
-        <!-- Implementation Panel -->
-        <div class="tab-panel" data-tab="implementation">
-          <div class="services-grid reveal">
-            <div class="card">
-              <h3>Workflow Design</h3>
-              <p>New process diagrams showing humans + AI working together effectively.</p>
-            </div>
-            <div class="card">
-              <h3>Prompt Engineering</h3>
-              <p>Custom prompt libraries and templates optimized for your specific use cases.</p>
-            </div>
-            <div class="card">
-              <h3>Training & Documentation</h3>
-              <p>Team onboarding materials, success criteria, and troubleshooting guides.</p>
-            </div>
-          </div>
+      <!-- 4-step overview -->
+      <div class="process-steps reveal" style="margin-bottom:72px;">
+        <div class="step">
+          <div class="step-circle">1</div>
+          <div class="step-title">Discovery Call</div>
+          <p class="step-desc">30 minutes with our founders. We learn your business, priorities, and biggest pain points — no sales pitch, just honest conversation.</p>
         </div>
+        <div class="step">
+          <div class="step-circle">2</div>
+          <div class="step-title">AI Readiness Audit</div>
+          <p class="step-desc">We analyse your workflows, tools, and data across every department. You receive a scored report with ranked opportunities.</p>
+        </div>
+        <div class="step">
+          <div class="step-circle">3</div>
+          <div class="step-title">Strategy & Build</div>
+          <p class="step-desc">We co-design your roadmap, then our team builds and deploys the agreed solutions — with weekly check-ins throughout.</p>
+        </div>
+        <div class="step">
+          <div class="step-circle">4</div>
+          <div class="step-title">Handover & Support</div>
+          <p class="step-desc">Full documentation, training, and credentials handed over. Ongoing support available — but you'll own everything outright.</p>
+        </div>
+      </div>
 
-        <!-- Advisory Panel -->
-        <div class="tab-panel" data-tab="advisory">
-          <div class="services-grid reveal">
-            <div class="card">
-              <h3>Monthly Reviews</h3>
-              <p>Check results, refine workflows, adapt to new tools and capabilities.</p>
-            </div>
-            <div class="card">
-              <h3>Tool Evolution</h3>
-              <p>Stay ahead of AI advancements and platform changes.</p>
-            </div>
-            <div class="card">
-              <h3>Expansion Opportunities</h3>
-              <p>New use cases as your team gets comfortable with AI workflows.</p>
+      <!-- Detailed timeline -->
+      <div style="max-width:720px;margin:0 auto;">
+        <span class="section-label" style="display:block;margin-bottom:32px;">Typical 6-Week Engagement</span>
+        <div class="timeline">
+
+          <div class="tl-item reveal">
+            <div class="tl-week">Week 1</div>
+            <div class="tl-line"><div class="tl-dot"></div><div class="tl-rule"></div></div>
+            <div class="tl-body">
+              <h3>Discovery &amp; Audit</h3>
+              <p>Kick-off call with your leadership team. We audit workflows, interview key staff, and map every process touchpoint. Scored AI Readiness Report delivered by end of week.</p>
             </div>
           </div>
+
+          <div class="tl-item reveal reveal-delay-1">
+            <div class="tl-week">Week 2</div>
+            <div class="tl-line"><div class="tl-dot"></div><div class="tl-rule"></div></div>
+            <div class="tl-body">
+              <h3>Strategy Session</h3>
+              <p>We present the full roadmap — prioritised by ROI and implementation effort. You choose which opportunities to pursue in this engagement and which to park for later.</p>
+            </div>
+          </div>
+
+          <div class="tl-item reveal reveal-delay-2">
+            <div class="tl-week">Weeks 3–4</div>
+            <div class="tl-line"><div class="tl-dot"></div><div class="tl-rule"></div></div>
+            <div class="tl-body">
+              <h3>Build &amp; Integration</h3>
+              <p>Core solutions are built and integrated into your existing stack. Weekly progress calls keep you in the loop. No surprises, no scope creep without your approval.</p>
+            </div>
+          </div>
+
+          <div class="tl-item reveal reveal-delay-3">
+            <div class="tl-week">Week 5</div>
+            <div class="tl-line"><div class="tl-dot"></div><div class="tl-rule"></div></div>
+            <div class="tl-body">
+              <h3>Testing &amp; Refinement</h3>
+              <p>Live testing with your team. We iterate on edge cases, tune models, and ensure everything performs correctly under real conditions before full rollout.</p>
+            </div>
+          </div>
+
+          <div class="tl-item reveal reveal-delay-4">
+            <div class="tl-week">Week 6</div>
+            <div class="tl-line"><div class="tl-dot"></div><div class="tl-rule"></div></div>
+            <div class="tl-body">
+              <h3>Handover &amp; Training</h3>
+              <p>Full documentation, video walkthroughs, and live training sessions for your team. All credentials, code, and assets transferred to you outright. You own everything.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div><!-- /process tab panel -->
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CTA STRIP
+═══════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="cta-strip reveal">
+      <span class="tag" style="margin-bottom:20px;">Free &amp; No Obligation</span>
+      <h2>Ready to see where AI fits <span class="grad-text">your business?</span></h2>
+      <p class="cta-sub">Book a free 30-minute discovery call. Walk away with clarity — even if you don't become a client.</p>
+      <div class="actions">
+        <a href="../contact/contact.html" class="btn btn--primary btn--lg">Book Free Discovery Call</a>
+        <a href="../pricing/pricing.html" class="btn btn--ghost btn--lg">View Pricing</a>
+      </div>
+      <div class="cta-personal-note">
+        <div>
+          <strong>A personal note from our founders</strong>
+          We read every inquiry ourselves and respond within 24 hours. No bots, no queues — just a real conversation.
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CTA -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="cta-block reveal">
-        <h2>Ready to see where AI fits your team?</h2>
-        <div class="cta-buttons">
-          <a href="../contact.html" class="cta-button">Schedule Audit</a>
-          <a href="pricing.html" class="cta-button cta-secondary">View Pricing</a>
+<!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">
+          <div class="logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          Kinesis AI
+        </a>
+        <p class="footer-tagline">Practical AI consulting for SMBs ready to work smarter, grow faster, and stay competitive.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
         </div>
       </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="../pricing/pricing.html">Pricing</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
+          <li><a href="../contact/contact.html">Contact</a></li>
+          <li><a href="../demo/index.html">Demo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#audit">AI Audit</a></li>
+          <li><a href="#strategy">Strategy</a></li>
+          <li><a href="#automation">Automation</a></li>
+          <li><a href="#support">AI Support</a></li>
+          <li><a href="#marketing">Marketing AI</a></li>
+          <li><a href="#data">Data &amp; Analytics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="../contact/contact.html">Free Discovery Call</a></li>
+          <li><a href="../pricing/pricing.html">Pricing</a></li>
+          <li><a href="../contact/contact.html">Free AI Audit</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
+        </ul>
+      </div>
     </div>
-  </section>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Kinesis AI. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
-  <script src="../js/main.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>

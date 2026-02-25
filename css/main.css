@@ -1,5 +1,5 @@
 /* ============================================================
-   Plasma AI — css/main.css
+   Kinesis AI — css/main.css
    Light theme: Purple + Sky Blue + Teal + Yellow hints
    Font: Space Grotesk (bold, techy, not aggressive)
    
@@ -70,6 +70,7 @@
   --teal-glow:     rgba(13, 148, 136, 0.14);
 
   --yellow:        #F59E0B;   /* Accent hint only — use sparingly */
+  --yellow-bright: #ffdc2c;
   --yellow-pale:   #FFFBEB;
 
   /* --- Backgrounds --- */
@@ -84,6 +85,9 @@
   --border-2:      #CFC9EE;   /* Slightly stronger border */
   --border-blue:   #BAE6FD;   /* Blue-tinted border */
   --border-purple: #DDD6FE;   /* Purple-tinted border */
+  --border-teal: #bcfcf3;
+  --border-yellow: #fef9d6;
+  --border-grad: linear-gradient(#BAE6FD, #DDD6FE);
 
   /* --- Text --- */
   --text:          #1E1A3C;   /* Near-black with purple tint */
@@ -95,9 +99,11 @@
   --grad-main:     linear-gradient(135deg, var(--purple) 0%, var(--blue-mid) 100%);
   --grad-accent:   linear-gradient(135deg, var(--teal) 0%, var(--blue-mid) 100%);
   --grad-full:     linear-gradient(135deg, var(--purple) 0%, var(--blue) 50%, var(--teal) 100%);
+  --grad-span:     linear-gradient(135deg, var(--purple-light) 0%, var(--blue) 33%, var(--teal-light) 70%, var(--yellow-bright) 100%);
   --grad-text:     linear-gradient(90deg, var(--purple), var(--blue-mid), var(--teal));
   --grad-subtle:   linear-gradient(135deg, var(--purple-pale) 0%, var(--blue-pale) 100%);
   --grad-yellow:   linear-gradient(90deg, var(--yellow), var(--teal));
+  
 
   /* --- Spacing & shape --- */
   --radius:        14px;
@@ -489,6 +495,28 @@ body::after {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.grad-border {
+  position: relative;
+  padding: 2px;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+}
+
+.grad-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px; /* ← border thickness, change to 3px for thicker */
+  background: linear-gradient(135deg, var(--purple), var(--blue-mid), var(--teal));
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 
 

@@ -1,108 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Plasma AI</title>
-  <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Kinesis AI</title>
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
 <nav class="navbar">
   <div class="container">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
         <div class="logo-mark">
-          <svg viewBox="0 0 18 18" fill="none">
-            <path d="M9 2L15.5 5.5V12.5L9 16L2.5 12.5V5.5L9 2Z"
-                  stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-            <circle cx="9" cy="9" r="2" fill="white"/>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
           </svg>
         </div>
-        Plasma AI
+        Kinesis AI
       </a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services/services.html">Services</a></li>
         <li><a href="pricing/pricing.html">Pricing</a></li>
-        <li><a href="#" class="active">About</a></li>
-        <li><a href="faq/faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact/contact.html">Contact</a></li>
         <li><a href="demo/index.html" class="nav-demo">Demo</a></li>
       </ul>
       <div class="nav-cta">
-        <a href="contact.html" class="btn btn--ghost">Book a Call</a>
-        <a href="contact.html" class="btn btn--primary">
-          Free Audit
-          <svg viewBox="0 0 16 16" fill="none">
-            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor"
-                  stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </a>
+        <a href="contact/contact.html" class="btn btn--ghost">Book a Call</a>
+        <a href="contact/contact.html" class="btn btn--primary">Free Audit</a>
       </div>
-      <button id="navToggle" aria-label="Open menu">☰</button>
+      <button id="navToggle" aria-label="Toggle menu">☰</button>
     </div>
   </div>
 </nav>
 
-<!-- Founder Card (pic left, text right) -->
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="orb orb--blue" style="width:440px;height:440px;top:-160px;right:-80px;"></div>
+  <div class="orb orb--teal" style="width:300px;height:300px;bottom:-80px;left:-40px;"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <span class="tag reveal">Who We Are</span>
+    <h1 class="page-hero-title reveal reveal-delay-1">
+      We stay small<br><span class="grad-text">on purpose.</span>
+    </h1>
+    <p class="page-hero-sub reveal reveal-delay-2">
+      Kinesis AI is focused on personalized advice to fit individual business needs.  
+    </p>
+  </div>
+</section>
+
+<!-- MISSION SECTION -->
 <section class="section">
   <div class="container">
-    <div class="card reveal" style="max-width: 900px; margin: 0 auto 4rem;">
-      <div style="display: grid; grid-template-columns: 280px 1fr; gap: 2.5rem; align-items: start;">
-        <!-- Photo left -->
-        <div style="text-align: center;">
-          <img src="images/founder.jpg" alt="Rishana Senthan" 
-               style="width: 280px; height: 280px; object-fit: cover; border-radius: 20px; box-shadow: 0 10px 30px rgba(109, 40, 217, 0.15);">
+    <div class="personal-block reveal">
+      <div>
+        <span class="section-label">Our Story</span>
+        <h2>Built for <span class="grad-text">individualized AI integration.</span></h2>
+        <p>As world pushes businesses to utilize the prowess of AI, we saw how its implementation often slowed businesses down.</p>
+        <p>The problem doesn't lie within AI itself, rather how it is used: it is never tailored to your needs, business goals, and workflow. </p>
+        <p>We founded Kinesis AI to fix that: so that businesses can rely on individualized solutions optimized to help <b>you</b>.</p>
+      </div>
+      <div class="personal-promises">
+        <div class="promise-item">
+          <div class="promise-dot"></div>
+          <p><strong>Founded 2025</strong>Started as two engineers tired of seeing SMBs underserved by big-firm AI consultancies.</p>
         </div>
-        
-        <!-- Text right -->
+        <div class="promise-item">
+          <div class="promise-dot"></div>
+          <p><strong>Collaborative Approach</strong>We place a high priority on actually understanding our clients so we can provide relevant and personalized solutions. We design with you, not for you.</p>
+        </div>
+        <div class="promise-item">
+          <div class="promise-dot"></div>
+          <p><strong>Deliberately boutique</strong>We cap client intake to protect quality. If we're full, we'll tell you — and refer you somewhere trustworthy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section section--alt">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:56px;" class="reveal">
+      <span class="section-label">The Team</span>
+      <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:700;letter-spacing:-0.03em;">Meet the people <br><span class="grad-text">dedicated to our mission.</span></h2>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:24px;">
+
+      <!-- Card 1 — Founder with real photo -->
+      <!--<div class="grad-border" style = "position:relative;overflow:hidden;" onmouseover="this.style.transform='translateY(-3px)'";>-->
+      <div class="reveal team-horiz" style="background:var(--grad-span);padding:3px;border-radius:var(--radius-lg);box-shadow: 0 0 0 1px rgba(109,40,217,0.1), 0 10px 40px rgba(109,40,217,0.15);transition:transform var(--transition),box-shadow var(--transition);" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow-lg)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-md)'">
+        <div style="background:var(--surface);border-radius:calc(var(--radius-lg) - 2px);overflow:hidden;display:grid;grid-template-columns:300px 1fr;height:100%;">
+        <!-- Top gradient rule -->
+        <!--<div style="position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad-full);"></div>-->
+        <!-- Photo -->
+        <div style="position:relative;overflow:hidden;min-height:280px;background:var(--surface);padding:16px 0 16px 16px;">
+          <img src="images/founder.jpg" alt="Rishana Senthan" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;border-radius: 5%;" onerror="this.style.display='none';this.parentElement.style.background='var(--grad-main)';" />
+          <!-- Subtle gradient overlay on right edge to blend into card -->
+          <div style="position:absolute;top:0;right:0;bottom:0;width:0px;background:linear-gradient(to right,transparent,var(--surface));"></div>
+        </div>
+        <!-- Text -->
+        <div style="padding:36px 40px;display:flex;flex-direction:column;justify-content:center;position:relative;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+            <span style="font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);background:var(--teal-pale);border:1px solid rgba(13,148,136,0.2);border-radius:100px;padding:3px 10px;">Founder</span>
+          </div>
+          <div style="font-size:26px;font-weight:700;letter-spacing:-0.03em;margin-bottom:4px;">Rishana Senthan</div>
+          <div style="font-size:13px;font-weight:600;color:var(--purple);letter-spacing:0.04em;text-transform:uppercase;margin-bottom:18px;">Founder &amp; Principal Consultant</div>
+          <p style="font-size:15px;color:var(--text-muted);line-height:1.8;margin-bottom:22px;">Engineering Science student at University of Toronto. Systems thinker who turns messy workflows into clear, repeatable processes. Kinesis AI exists because most teams waste hours on work that AI could handle—but they do not know where to start.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="font-size:12px;font-weight:600;color:var(--text-soft);background:var(--purple-pale);border:1px solid var(--border-purple);border-radius:100px;padding:4px 12px;">AI Strategy</span>
+            <span style="font-size:12px;font-weight:600;color:var(--text-soft);background:var(--purple-pale);border:1px solid var(--border-purple);border-radius:100px;padding:4px 12px;">Workflow Analysis</span>
+            <span style="font-size:12px;font-weight:600;color:var(--text-soft);background:var(--purple-pale);border:1px solid var(--border-purple);border-radius:100px;padding:4px 12px;">Discovery Calls</span>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Card 2 — Placeholder -->
+      <div class="reveal reveal-delay-1 team-horiz" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;display:grid;grid-template-columns:300px 1fr;box-shadow:var(--shadow-sm);transition:transform var(--transition),box-shadow var(--transition);" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow-lg)';this.style.borderColor='var(--border-purple)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-sm)';this.style.borderColor='var(--border)'">
+        <!-- Photo placeholder -->
+        <div style="min-height:260px;background:linear-gradient(135deg,var(--purple-pale) 0%,var(--blue-pale) 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+          <div style="position:absolute;inset:0;background:var(--grad-main);opacity:0.06;"></div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--border-2)" stroke-width="1" style="width:72px;height:72px;"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          <div style="position:absolute;top:0;right:0;bottom:0;width:40px;background:linear-gradient(to right,transparent,var(--surface));"></div>
+        </div>
+        <!-- Text -->
+        <div style="padding:36px 40px;display:flex;flex-direction:column;justify-content:center;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+            <span style="font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-mid);background:var(--blue-pale);border:1px solid var(--border-blue);border-radius:100px;padding:3px 10px;">Co-Founder</span>
+          </div>
+          <div style="font-size:26px;font-weight:700;letter-spacing:-0.03em;margin-bottom:4px;">yipeyipe</div>
+          <div style="font-size:13px;font-weight:600;color:var(--blue-mid);letter-spacing:0.04em;text-transform:uppercase;margin-bottom:18px;">wiwiwi</div>
+          <p style="font-size:15px;color:var(--text-muted);line-height:1.8;margin-bottom:22px;">wiwiw</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="font-size:12px;font-weight:600;color:var(--text-soft);background:var(--blue-pale);border:1px solid var(--border-blue);border-radius:100px;padding:4px 12px;">ML Engineering</span>
+            <span style="font-size:12px;font-weight:600;color:var(--text-soft);background:var(--blue-pale);border:1px solid var(--border-blue);border-radius:100px;padding:4px 12px;">Relations</span>
+            <span style="font-size:12px;font-weight:600;color:var(--text-soft);background:var(--blue-pale);border:1px solid var(--border-blue);border-radius:100px;padding:4px 12px;">System Design</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 — Placeholder -->
+      <div class="reveal reveal-delay-2 team-horiz" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;display:grid;grid-template-columns:300px 1fr;box-shadow:var(--shadow-sm);transition:transform var(--transition),box-shadow var(--transition);" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow-lg)';this.style.borderColor='var(--border-purple)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-sm)';this.style.borderColor='var(--border)'">
+        <!-- Photo placeholder -->
+        <div style="min-height:260px;background:linear-gradient(135deg,var(--teal-pale) 0%,var(--blue-pale) 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+          <div style="position:absolute;inset:0;background:var(--grad-accent);opacity:0.06;"></div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--border-2)" stroke-width="1" style="width:72px;height:72px;"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          <div style="position:absolute;top:0;right:0;bottom:0;width:40px;background:linear-gradient(to right,transparent,var(--surface));"></div>
+        </div>
+        <!-- Text -->
+        <div style="padding:36px 40px;display:flex;flex-direction:column;justify-content:center;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+            <span style="font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);background:var(--teal-pale);border:1px solid rgba(13,148,136,0.2);border-radius:100px;padding:3px 10px;">Senior Engineer</span>
+          </div>
+          <div style="font-size:26px;font-weight:700;letter-spacing:-0.03em;margin-bottom:4px;">Team Member</div>
+          <div style="font-size:13px;font-weight:600;color:var(--teal);letter-spacing:0.04em;text-transform:uppercase;margin-bottom:18px;">Senior AI Engineer</div>
+          <p style="font-size:15px;color:var(--text-muted);line-height:1.8;margin-bottom:22px;">Specialises in NLP, chatbot development, and data pipeline architecture. Brings enterprise-grade engineering discipline to SMB-scale projects — so you get big-company reliability without the big-company price tag.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="font-size:12px;font-weight:600;color:var(--text-soft);background:var(--teal-pale);border:1px solid rgba(13,148,136,0.2);border-radius:100px;padding:4px 12px;">NLP</span>
+            <span style="font-size:12px;font-weight:600;color:var(--text-soft);background:var(--teal-pale);border:1px solid rgba(13,148,136,0.2);border-radius:100px;padding:4px 12px;">Chatbots</span>
+            <span style="font-size:12px;font-weight:600;color:var(--text-soft);background:var(--teal-pale);border:1px solid rgba(13,148,136,0.2);border-radius:100px;padding:4px 12px;">Data Pipelines</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 — Placeholder -->
+      <div class="reveal reveal-delay-3 team-horiz" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;display:grid;grid-template-columns:300px 1fr;box-shadow:var(--shadow-sm);transition:transform var(--transition),box-shadow var(--transition);" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow-lg)';this.style.borderColor='var(--border-purple)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow-sm)';this.style.borderColor='var(--border)'">
+        <!-- Photo placeholder -->
+        <div style="min-height:260px;background:linear-gradient(135deg,var(--yellow-pale) 0%,var(--purple-pale) 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+          <div style="position:absolute;inset:0;background:var(--grad-yellow);opacity:0.05;"></div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--border-2)" stroke-width="1" style="width:72px;height:72px;"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          <div style="position:absolute;top:0;right:0;bottom:0;width:40px;background:linear-gradient(to right,transparent,var(--surface));"></div>
+        </div>
+        <!-- Text -->
+        <div style="padding:36px 40px;display:flex;flex-direction:column;justify-content:center;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+            <span style="font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--yellow);background:var(--yellow-pale);border:1px solid rgba(245,158,11,0.25);border-radius:100px;padding:3px 10px;">Advisor</span>
+          </div>
+          <div style="font-size:26px;font-weight:700;letter-spacing:-0.03em;margin-bottom:4px;">Team Member</div>
+          <div style="font-size:13px;font-weight:600;color:var(--yellow);letter-spacing:0.04em;text-transform:uppercase;margin-bottom:18px;">Strategic Advisor</div>
+          <p style="font-size:15px;color:var(--text-muted);line-height:1.8;margin-bottom:22px;">Add a bio for this team member here. Describe their background, what they bring to the team, and the specific areas they focus on when working with clients.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="font-size:12px;font-weight:600;color:var(--text-soft);background:var(--yellow-pale);border:1px solid rgba(245,158,11,0.2);border-radius:100px;padding:4px 12px;">Strategy</span>
+            <span style="font-size:12px;font-weight:600;color:var(--text-soft);background:var(--yellow-pale);border:1px solid rgba(245,158,11,0.2);border-radius:100px;padding:4px 12px;">Growth</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /team stack -->
+
+    <style>
+      @media (max-width: 768px) {
+        .team-horiz { grid-template-columns: 1fr !important; }
+      }
+    </style>
+
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:48px;" class="reveal">
+      <span class="section-label">What We Stand For</span>
+      <h2 style="font-size:clamp(28px,3.5vw,44px);font-weight:700;letter-spacing:-0.03em;">Principles we refuse<br><span class="grad-text">to negotiate on.</span></h2>
+    </div>
+
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <h3>Radical Transparency</h3>
+        <p>No jargon, no fine print. Every recommendation includes the reason behind it. If something won't work for your business, we'll say so upfront — even if it costs us the project.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-1">
+        <h3>Founder Accountability</h3>
+        <p>The people you speak to on the discovery call are the same people who build your solutions. No delegation to juniors, no outsourcing. Your project has names on it.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-2">
+        <h3>You Own Everything</h3>
+        <p>When we hand over, you get the code, the credentials, the documentation, and the training. Zero vendor lock-in to us. We succeed when you succeed independently.</p>
+      </div>
+      <div class="value-card reveal">
+        <h3>Right-Sized Solutions</h3>
+        <p>We match AI complexity to your actual needs. Sometimes that's a sophisticated custom model. Sometimes it's a $20/month tool configured correctly. We'll always tell you which.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-1">
+        <h3>Long-Term Thinking</h3>
+        <p>We measure success by what's still working 6 months after handover — not by how impressive the demo looked. Every decision is made with the long run in mind.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-2">
+        <h3>No Growth-at-Any-Cost</h3>
+        <p>We turn away work that doesn't fit. We limit intake to protect quality. We'd rather be the best small firm than an average big one. Quality over scale, always.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="grid-4 reveal" style="text-align:center;">
+      <div class="stat-block">
+        <div class="num" data-count="200" data-suffix="+">0+</div>
+        <div class="lbl">Businesses Audited</div>
+      </div>
+      <div class="stat-block">
+        <div class="num" data-count="94" data-suffix="%">0%</div>
+        <div class="lbl">Client Satisfaction</div>
+      </div>
+      <div class="stat-block">
+        <div class="num" data-count="3">0</div>
+        <div class="lbl">Core Team Members</div>
+      </div>
+      <div class="stat-block">
+        <div class="num" data-count="3" data-suffix="x">0x</div>
+        <div class="lbl">Average 6-Month ROI</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="section">
+  <div class="container">
+    <div class="cta-strip reveal">
+      <span class="tag" style="margin-bottom:20px;">Work With Us</span>
+      <h2>Ready to meet the team <span class="grad-text">behind the work?</span></h2>
+      <p class="cta-sub">Book a free 30-minute discovery call. You'll speak directly with Alex or Sophie — no gatekeepers.</p>
+      <div class="actions">
+        <a href="contact/contact.html" class="btn btn--primary btn--lg">Book Free Discovery Call</a>
+        <a href="services/services.html" class="btn btn--ghost btn--lg">View Our Services</a>
+      </div>
+      <div class="cta-personal-note">
         <div>
-          <h1 style="margin-bottom: 0.75rem;">Rishana Senthan</h1>
-          <p style="font-size: 18px; color: var(--text-soft); margin-bottom: 1.5rem; font-weight: 500;">
-            Founder & Principal Consultant
-          </p>
-          <p style="color: var(--text-muted); line-height: 1.75;">
-            Engineering Science student at University of Toronto. Systems thinker who turns
-            messy workflows into clear, repeatable processes. Plasma AI exists because most
-            teams waste hours on work that AI could handle—but they do not know where to start.
-          </p>
+          <strong>A personal note from our founders</strong>
+          We read every inquiry ourselves and respond within 24 hours. No bots, no queues — just a real conversation.
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Why Plasma AI -->
-<section class="section">
+<!-- FOOTER -->
+<footer>
   <div class="container">
-    <h2 class="reveal">Why Plasma AI?</h2>
-    <div class="grid-2 reveal">
-      <div>
-        <h3>Engineering Approach</h3>
-        <p>Workflows are systems. We analyze them like structures: identify load‑bearing elements, weak points, and optimization opportunities.</p>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          Kinesis AI
+        </a>
+        <p class="footer-tagline">Practical AI consulting for SMBs ready to work smarter, grow faster, and stay competitive.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
+        </div>
       </div>
-      <div>
-        <h3>No Hype, Just Results</h3>
-        <p>We only recommend what works for your constraints. No experimental tools, no unproven frameworks.</p>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services/services.html">Services</a></li>
+          <li><a href="pricing/pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq/faq.html">FAQ</a></li>
+          <li><a href="contact/contact.html">Contact</a></li>
+          <li><a href="demo/index.html">Demo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services/services.html#audit">AI Audit</a></li>
+          <li><a href="services/services.html#strategy">Strategy</a></li>
+          <li><a href="services/services.html#automation">Automation</a></li>
+          <li><a href="services/services.html#support">AI Support</a></li>
+          <li><a href="services/services.html#marketing">Marketing AI</a></li>
+          <li><a href="services/services.html#data">Data &amp; Analytics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="contact/contact.html">Free Discovery Call</a></li>
+          <li><a href="pricing/pricing.html">Pricing</a></li>
+          <li><a href="contact/contact.html">Free AI Audit</a></li>
+          <li><a href="faq/faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Kinesis AI. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
       </div>
     </div>
   </div>
-</section>
-
-<!-- CTA -->
-<section class="section section-alt">
-  <div class="container">
-    <div class="cta-block reveal">
-      <h2>Ready to start?</h2>
-      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-        <a href="contact.html" class="btn btn--primary btn--lg">Schedule a Call</a>
-        <a href="services/services.html" class="btn btn--outline btn--lg">Learn More</a>
-      </div>
-    </div>
-  </div>
-</section>
+</footer>
 
 <script src="js/main.js"></script>
 </body>

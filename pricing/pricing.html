@@ -1,122 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pricing — Kinesis AI</title>
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main.css" />
 </head>
 <body>
+
+<!-- NAVBAR -->
 <nav class="navbar">
   <div class="container">
     <div class="nav-inner">
-
-      <!-- Logo -->
       <a href="../index.html" class="nav-logo">
         <div class="logo-mark">
-          <!-- Hexagon icon -->
-          <svg viewBox="0 0 18 18" fill="none">
-            <path d="M9 2L15.5 5.5V12.5L9 16L2.5 12.5V5.5L9 2Z"
-                  stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-            <circle cx="9" cy="9" r="2" fill="white"/>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
           </svg>
         </div>
         Kinesis AI
       </a>
-
-      <!-- Desktop nav links -->
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
         <li><a href="../services/services.html">Services</a></li>
-        <li><a href="../pricing/pricing.html">Pricing</a></li>
+        <li><a href="pricing.html" class="active">Pricing</a></li>
         <li><a href="../about.html">About</a></li>
-        <li><a href="faq/faq.html">FAQ</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-        <!-- Demo link styled differently — see .nav-demo in CSS -->
+        <li><a href="../faq/faq.html">FAQ</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
         <li><a href="../demo/index.html" class="nav-demo">Demo</a></li>
       </ul>
-
-      <!-- CTA buttons -->
       <div class="nav-cta">
-        <a href="contact.html" class="btn btn--ghost">Book a Call</a>
-        <a href="contact.html" class="btn btn--primary">
-          Free Audit
-          <svg viewBox="0 0 16 16" fill="none">
-            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor"
-                  stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </a>
+        <a href="../contact/contact.html" class="btn btn--ghost">Book a Call</a>
+        <a href="../contact/contact.html" class="btn btn--primary">Free Audit</a>
       </div>
-
-      <!-- Mobile hamburger button (visible only on small screens via CSS) -->
-      <button id="navToggle" aria-label="Open menu">☰</button>
-
+      <button id="navToggle" aria-label="Toggle menu">☰</button>
     </div>
   </div>
 </nav>
 
-  <!-- Hero -->
-<section class="section">
-  <section class="hero hero--pricing">
-    <div class="container">
-      <div class="hero-content reveal">
-        <h1>Clear pricing, real results</h1>
-        <p>
-          Fixed‑scope engagements with transparent pricing. No hourly billing, no surprises.
-          Pay for outcomes, not time.
-        </p>
-      </div>
-    </div>
-  </section>
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="orb orb--teal" style="width:420px;height:420px;top:-140px;right:-60px;"></div>
+  <div class="orb orb--purple" style="width:340px;height:340px;bottom:-100px;left:-60px;"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <span class="tag reveal">Transparent Pricing</span>
+    <h1 class="page-hero-title reveal reveal-delay-1">
+      Simple, honest pricing.<br><span class="grad-text">No surprises.</span>
+    </h1>
+    <p class="page-hero-sub reveal reveal-delay-2">
+      Every plan includes direct founder access. No account managers, no upsell treadmill — just clear scope and real results.
+    </p>
+  </div>
 </section>
-  <!-- Pricing Cards -->
-  <section class="section" id="pricing">
-    <div class="container">
-      <div class="pricing-grid reveal">
-        <div class="price-card">
-          <h3>Workflow Audit</h3>
-          <div class="price-amount">$2,500</div>
-          <div class="price-suffix">one-time</div>
-          <ul class="price-features">
-            <li>2–3 days of process mapping</li>
-            <li>AI opportunity scoring</li>
-            <li>Quick‑win recommendations</li>
-            <li>30‑minute debrief call</li>
-          </ul>
-          <a href="../contact.html" class="cta-button">Start Audit</a>
-        </div>
 
-        <div class="price-card featured">
-          <div class="popular-badge">Most Popular</div>
-          <h3>Full Strategy Package</h3>
-          <div class="price-amount">$7,500</div>
-          <div class="price-suffix">one-time</div>
-          <ul class="price-features">
-            <li>Complete workflow audit</li>
-            <li>Phased roadmap (6–12 months)</li>
-            <li>Tool recommendations & prompts</li>
-            <li>2x implementation workshops</li>
-            <li>Team training materials</li>
-          </ul>
-          <a href="../contact.html" class="cta-button">Get Started</a>
-        </div>
+<!-- PRICING GRID -->
+<section class="section">
+  <div class="container">
 
-        <div class="price-card">
-          <h3>Ongoing Advisory</h3>
-          <div class="price-amount">$1,200</div>
-          <div class="price-suffix">/month</div>
-          <ul class="price-features">
-            <li>Monthly strategy review</li>
-            <li>Workflow refinement</li>
-            <li>New tool evaluations</li>
-            <li>Unlimited email support</li>
-          </ul>
-          <a href="../contact.html" class="cta-button">Schedule Call</a>
+    <div class="pricing-grid reveal">
+
+      <!-- STARTER -->
+      <div class="price-card">
+        <div class="plan-tier">Starter</div>
+        <div style="display:flex;align-items:baseline;gap:4px;margin-bottom:6px;">
+          <span class="plan-amount" data-count="1497" data-prefix="$">$0</span>
+        </div>
+        <p class="plan-tagline">One-time · AI Readiness Audit + Report</p>
+        <ul class="plan-feats">
+          <li class="feat">
+            <span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Full AI Readiness Audit (all departments)
+          </li>
+          <li class="feat">
+            <span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Scored report with ranked opportunities
+          </li>
+          <li class="feat">
+            <span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            60-minute findings call with founders
+          </li>
+          <li class="feat">
+            <span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Written recommendations you keep forever
+          </li>
+          <li class="feat">
+            <span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Delivered in 5 business days
+          </li>
+        </ul>
+        <a href="../contact/contact.html" class="btn btn--ghost" style="width:100%;justify-content:center;">Get Started</a>
+      </div>
+
+      <!-- GROWTH (FEATURED) -->
+      <div class="price-card price-card--featured">
+        <div class="popular-badge">Most Popular</div>
+        <div class="plan-tier">Growth</div>
+        <div style="display:flex;align-items:baseline;gap:4px;margin-bottom:6px;">
+          <span class="plan-amount" data-count="4997" data-prefix="$">$0</span>
+        </div>
+        <p class="plan-tagline">One-time · Full Strategy + First Implementation</p>
+        <ul class="plan-feats">
+          <li class="feat">
+            <span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Everything in Starter
+          </li>
+          <li class="feat">
+            <span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Full AI Strategy &amp; Roadmap document
+          </li>
+          <li class="feat">
+            <span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            One core automation or AI tool built &amp; deployed
+          </li>
+          <li class="feat">
+            <span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Team training &amp; onboarding session
+          </li>
+          <li class="feat">
+            <span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            30-day post-launch support
+          </li>
+          <li class="feat">
+            <span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Full code &amp; asset ownership
+          </li>
+        </ul>
+        <a href="../contact/contact.html" class="btn btn--primary" style="width:100%;justify-content:center;">Get Started</a>
+      </div>
+
+      <!-- TRANSFORM -->
+      <div class="price-card">
+        <div class="plan-tier">Transform</div>
+        <div style="display:flex;align-items:baseline;gap:4px;margin-bottom:6px;">
+          <span class="plan-amount">Custom</span>
+        </div>
+        <p class="plan-tagline">Ongoing · Full AI Transformation Programme</p>
+        <ul class="plan-feats">
+          <li class="feat">
+            <span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Everything in Growth
+          </li>
+          <li class="feat">
+            <span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Multiple AI solutions across all departments
+          </li>
+          <li class="feat">
+            <span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Dedicated weekly founder check-ins
+          </li>
+          <li class="feat">
+            <span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Priority Slack/email access
+          </li>
+          <li class="feat">
+            <span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Ongoing optimisation &amp; iteration
+          </li>
+          <li class="feat">
+            <span class="feat-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Quarterly strategy reviews
+          </li>
+        </ul>
+        <a href="../contact/contact.html" class="btn btn--teal" style="width:100%;justify-content:center;">Talk to Us</a>
+      </div>
+
+    </div><!-- /pricing-grid -->
+
+    <!-- Personalised note below pricing -->
+    <div class="personal-block reveal" style="margin-top:56px;">
+      <div>
+        <span class="section-label">Our Promise</span>
+        <h2>Pricing is always honest. <span class="grad-text">Always.</span></h2>
+        <p>Every quote is based on a real conversation about your business — not a rate card we hit with a multiplier. If a cheaper tool solves your problem, we'll recommend it.</p>
+        <p>We would rather keep your trust than lock you into a contract that doesn't fit. That is why every engagement includes a full handover: you own everything we build, no strings attached.</p>
+      </div>
+      <div class="personal-promises">
+        <div class="promise-item">
+          <div class="promise-dot"></div>
+          <p><strong>No hidden fees</strong>What you see is what you pay. Scope changes are discussed openly before any additional work begins.</p>
+        </div>
+        <div class="promise-item">
+          <div class="promise-dot"></div>
+          <p><strong>No vendor lock-in</strong>Every credential, codebase, and workflow is handed to you on completion. We work for you — not the other way around.</p>
+        </div>
+        <div class="promise-item">
+          <div class="promise-dot"></div>
+          <p><strong>ROI or we talk</strong>If you're not seeing results, we want to know. We'll revisit the strategy and make it right — that's a founder-level commitment.</p>
         </div>
       </div>
     </div>
-  </section>
 
-  <script src="../js/main.js"></script>
+    <!-- FAQ teaser -->
+    <div style="margin-top:56px;text-align:center;" class="reveal">
+      <p style="color:var(--text-muted);font-size:15px;margin-bottom:18px;">Have questions about what's included?</p>
+      <a href="../faq/faq.html" class="btn btn--outline">Read the FAQ</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="section--sm section--alt">
+  <div class="container">
+    <div class="cta-strip reveal">
+      <span class="tag" style="margin-bottom:20px;">Free &amp; No Obligation</span>
+      <h2>Not sure which plan is right? <span class="grad-text">Let's talk.</span></h2>
+      <p class="cta-sub">Book a free 30-minute call and we'll tell you honestly which option fits your goals and budget — even if that's none of the above.</p>
+      <div class="actions">
+        <a href="../contact/contact.html" class="btn btn--primary btn--lg">Book Free Discovery Call</a>
+        <a href="../services/services.html" class="btn btn--ghost btn--lg">See All Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">
+          <div class="logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          Kinesis AI
+        </a>
+        <p class="footer-tagline">Practical AI consulting for SMBs ready to work smarter, grow faster, and stay competitive.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../services/services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../faq/faq.html">FAQ</a></li>
+          <li><a href="../contact/contact.html">Contact</a></li>
+          <li><a href="../demo/index.html">Demo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="../services/services.html#audit">AI Audit</a></li>
+          <li><a href="../services/services.html#strategy">Strategy</a></li>
+          <li><a href="../services/services.html#automation">Automation</a></li>
+          <li><a href="../services/services.html#support">AI Support</a></li>
+          <li><a href="../services/services.html#marketing">Marketing AI</a></li>
+          <li><a href="../services/services.html#data">Data &amp; Analytics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="../contact/contact.html">Free Discovery Call</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="../contact/contact.html">Free AI Audit</a></li>
+          <li><a href="../faq/faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Kinesis AI. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
 </body>
 </html>
